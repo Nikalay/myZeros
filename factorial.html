@@ -1,0 +1,30 @@
+<script type="text/javascript">
+function fact_iter(a) {
+var result = 1;
+for (var i = 1; i <= a; i++) {result = result * i;}
+console.log(result);
+}
+//fact_iter(5);
+/*N!! = N(N-2)(N-4)*... (последний сомножитель равен 2, если N — четное, и 1, если N — нечетное)
+n! = n * (n - 1) * (n - 2) * ...*1
+
+function factorial(n) {
+  return (n != 1) ? n * factorial(n - 1) : 1;
+}
+
+alert( factorial(5) ); // 120
+*/
+function fact_double (n){
+	if(n%2 == 0){
+	var result =  n;
+		for(var j = n; j > 2; j--){result = result * (n-2*j);	}
+		
+			console.log(result);
+} 	else {
+	var start =  n;
+		for(var j = 1; j <= n; j++){result = result * (n-2*j);	}
+			console.log(result);
+		}
+						}
+fact_double(4);
+</script>
